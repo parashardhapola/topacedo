@@ -16,20 +16,20 @@ if __name__ == "__main__":
     ]
     keywords = ['store']
     version = open('VERSION').readline().rstrip('\n')
-    install_requires = ['scarf']
-    dependency_links = ['https://github.com/fraenkel-lab/pcst_fast/tarball/master#egg=pcst_fast-1.0.7']
+    install_requires = [
+        'scarf',
+        'pcst_fast @ https://github.com/fraenkel-lab/pcst_fast/archive/1.0.7.zip#egg=pcst_fast-1.0.7']
     setup(
         name='topacedo',
         description='topacedo',
-        long_description=read('README.rst'),
+        long_description=read('README.md'),
         author='Parashar Dhapola',
         author_email='parashar.dhapola@gmail.com',
         license='BSD 3-Clause',
         classifiers=classifiers,
         keywords=keywords,
         install_requires=install_requires,
-        dependency_links=dependency_links,
         version=version,
-        packages=find_packages(exclude=['data', 'bin']),
+        packages=find_packages(),
         include_package_data=False
     )
