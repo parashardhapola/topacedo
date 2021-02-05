@@ -4,3 +4,4 @@ scipy
 scarf
 tqdm
 numba
+networkx
