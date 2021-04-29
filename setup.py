@@ -17,15 +17,14 @@ if __name__ == "__main__":
     keywords = ['store']
     version = open('VERSION').readline().rstrip('\n')
     install_requires = [
-        'scarf',
-        'pcst_fast @ https://github.com/fraenkel-lab/pcst_fast/archive/1.0.7.zip#egg=pcst_fast-1.0.7']
+        'scarf-toolkit']
     setup(
         name='topacedo',
         description='topacedo',
         long_description=read('README.md'),
         author='Parashar Dhapola',
+        url='https://github.com/parashardhapola/topacedo',
         author_email='parashar.dhapola@gmail.com',
-        license='BSD 3-Clause',
         classifiers=classifiers,
         keywords=keywords,
         install_requires=install_requires,

@@ -1,2 +1,6 @@
 .idea
 .ipynb_checkpoints
+build
+dist
+topacedo.egg-info
+
