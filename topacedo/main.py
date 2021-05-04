@@ -3,10 +3,13 @@ from scipy.sparse import csr_matrix
 import pandas as pd
 from typing import List, Tuple, Union
 from scipy.sparse.csgraph import connected_components
-import pcst_fast
 from .density import calc_neighbourhood_density
 from .recluster import make_digraph, recluster
-
+try:
+    import pcst_fast
+except ImportError:
+    raise ImportError('ERROR: PCST is not installed. Install using the following command:\n\t'
+                      ' pip install https://github.com/fraenkel-lab/pcst_fast/tarball/master#egg=pcst_fast-1.0.7')
 
 __all__ = ['TopacedoSampler']
 
