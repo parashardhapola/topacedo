@@ -16,6 +16,7 @@ if __name__ == "__main__":
     ]
     keywords = ['store']
     version = open('VERSION').readline().rstrip('\n')
+    dependency_links = ['https://github.com/fraenkel-lab/pcst_fast/tarball/master#egg=pcst_fast-1.0.7']
     install_requires = []
     setup(
         name='topacedo',
@@ -27,7 +28,9 @@ if __name__ == "__main__":
         classifiers=classifiers,
         keywords=keywords,
         install_requires=install_requires,
+        dependency_links=dependency_links,
         version=version,
         packages=find_packages(),
         include_package_data=False
     )
+
