@@ -16,8 +16,7 @@ if __name__ == "__main__":
     ]
     keywords = ['store']
     version = open('VERSION').readline().rstrip('\n')
-    install_requires = [
-        'scarf-toolkit']
+    install_requires = ['pcst-fast@ https://github.com/fraenkel-lab/pcst_fast/archive/1.0.7.zip#egg=pcst_fast-1.0.7']
     setup(
         name='topacedo',
         description='topacedo',
