@@ -1,0 +1,11 @@
+recursive-exclude * __pycache__
+recursive-exclude * *.pyc
+recursive-exclude * *.pyo
+exclude .gitignore
+exclude .gitattribute
+exclude push_pypi.sh
+prune topacedo.egg-info
+prune .github
+include requirements.txt
+include VERSION
+
