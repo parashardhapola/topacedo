@@ -4,3 +4,4 @@ scipy
 tqdm
 numba
 networkx
+pcst_fast
