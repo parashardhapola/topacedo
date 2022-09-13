@@ -17,7 +17,7 @@ if __name__ == "__main__":
     ]
     keywords = ['store']
     version = open('VERSION').readline().rstrip('\n')
-    install_requires = []
+    install_requires = [x.strip() for x in open("requirements.txt")]
     setup(
         name='topacedo',
         description='topacedo',
